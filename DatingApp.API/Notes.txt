@@ -1,0 +1,14 @@
+﻿UDEMY : Build an app with ASPNET Core and Angular from scratch
+
+-- Database Generation (Entity Framework): 
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Add-Migration InitialCreate
+Update-Database
+
+-- Installer angular CLI
+npm install -g @angular/cli  
+ng new "NomApp"
+
+
+--Initialisation repo git : 
+git init
