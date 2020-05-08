@@ -4,6 +4,10 @@
 Install-Package Microsoft.EntityFrameworkCore.Tools
 Add-Migration InitialCreate
 Update-Database
+-- Ajout d'une entité
+dotnet ef migrations add AddedUserEntity
+dotnet ef database update
+
 
 -- Installer angular CLI
 npm install -g @angular/cli  
@@ -12,3 +16,13 @@ ng new "NomApp"
 
 --Initialisation repo git : 
 git init
+
+
+-- If you are using .Net.Core.3.0
+-- Install those 2 packages
+ - Microsoft.IdentityModel.Tokens
+ - System.IdentityModel.Tokens.JWT
+ - Microsoft.AspNetCore.Authentication.JwtBearer
+
+
+ -- Token verification : http://jwt.io
